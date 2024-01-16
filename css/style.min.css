@@ -470,6 +470,7 @@
     position: relative;
     isolation: isolate;
 }
+
 .citacao::after {
     content: "";
     position: absolute;
