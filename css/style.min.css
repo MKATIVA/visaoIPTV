@@ -666,12 +666,13 @@ body {
 }
 
 .titulo-principal {
-    font-size: 5rem;
+    font-size: 3rem;
     color: var(--branco);
     max-width: 900px;
     margin-bottom: 30px;
     position: relative;
-    padding: 20px 0
+    padding: 20px 0;
+    text-align: center;
 }
 
 .titulo,
@@ -845,6 +846,16 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    .titulo-principal {
+        font-size: 2rem;
+        color: var(--branco);
+        max-width: 900px;
+        margin-bottom: 30px;
+        position: relative;
+        padding: 20px 0;
+        text-align: center;
+    }
+
     .logo img {
         width: 50%;
         height: auto;
