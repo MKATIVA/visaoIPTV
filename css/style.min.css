@@ -10,8 +10,7 @@
 }
 
 .header {
-    /* background: var(--background-header); */
-    background: #FF2E63;
+    background: var(--background-header);
     padding: 20px 40px;
     position: fixed;
     width: 100%;
