@@ -96,8 +96,8 @@ var sections = document.querySelectorAll("section[id]"),
 scrollActive(), addScrollSectionEvent();
 
 
-/* Botão de voltar para cima */
 
+/* Botão de voltar para cima */
 var backToTopButton = document.getElementById("back-to-top-btn");
 
 // Adiciona um ouvinte de evento de rolagem para mostrar ou ocultar o botão
@@ -115,4 +115,7 @@ backToTopButton.addEventListener("click", function () {
   document.documentElement.scrollTop = 0;
 });
 
+//Download App
+ document.getElementById("downloadLink").addEventListener("click", function () {
 
+ });

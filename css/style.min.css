@@ -91,6 +91,7 @@
     margin: 0;
     /* Remove margens padrão do body */
     isolation: isolate;
+    background-attachment: fixed;
 }
 
 .intro::after {
@@ -554,7 +555,7 @@
         top: var(--header-height);
         right: 0;
         background: var(--cinza);
-        z-index: 999;
+        z-index: 9999;
         -webkit-transition: all .4s;
         transition: all .4s;
         height: 0;
@@ -565,7 +566,7 @@
     }
 
     .header.active .menu {
-        top: var(--header-scroll-height)
+        top: var(--header-scroll-height);
     }
 
     .menu li a {
@@ -573,17 +574,17 @@
     }
 
     .menu li a:hover {
-        background-color: var(--cinza-3)
+        background-color: var(--cinza-3);
     }
 
     .menu.active {
-        height: 180px;
-        visibility: visible
+        height: auto;
+        visibility: visible;
     }
 
     .header.active .menu.active {
-        height: 171px;
-        visibility: visible
+        height: auto;
+        visibility: visible;
     }
 
     .btn-mobile.active {
@@ -742,6 +743,7 @@ body {
     color: var(--azul)
 }
 
+
 @media screen and (max-width: 700px) {
     .titulo-principal {
         font-size: 3.5rem
@@ -820,7 +822,7 @@ body {
     --font-titulo: 'Oxygen', sans-serif;
     --font: 'Fira Sans', sans-serif;
     --header-height: 90px;
-    --header-scroll-height: 70px
+    --header-scroll-height: 70px;
 }
 
 /* Botão de voltar para cima*/
@@ -860,4 +862,24 @@ body {
         width: 50%;
         height: auto;
     }
+}
+
+.app-download {
+    width: 350px;
+    height: 320px;
+    background-color: #2e3033;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.app-download p {
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.app-download img {
+    width: 360px;
+    height: auto;
 }
