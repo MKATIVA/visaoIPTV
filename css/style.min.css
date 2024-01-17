@@ -127,7 +127,7 @@
     text-align: justify;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
     .intro-content {
         padding: 120px 20px 100px;
         display: -webkit-box;
@@ -149,6 +149,12 @@
         font-size: 18px;
         text-align: center;
         padding: 0 20px;
+    }
+
+    .download .carousel {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+        gap: 20px;
     }
 }
 
@@ -862,24 +868,66 @@ body {
         width: 50%;
         height: auto;
     }
+
+    .download .carousel {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(240px, 1fr));
+        gap: 20px;
+    }
+
 }
 
-.app-download {
-    width: 350px;
-    height: 320px;
-    background-color: #2e3033;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-}
+/* Section de Download */
 
-.app-download p {
-    color: #fff;
-    padding: 15px;
-    font-size: 18px;
-}
-
-.app-download img {
-    width: 360px;
+.download {
+    width: 100%;
     height: auto;
+    background-color: #2e3033;
+    text-align: center;
+    padding: 30px;
+}
+
+
+.carousel {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.download .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.download .carousel .card .box h3 {
+    position: absolute;
+    color: #fff;
+    background-color: var(--Cor-Laranja);
+    width: 100%;
+    bottom: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    z-index: 9999;
+}
+
+.download .carousel .card .btn {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.download .carousel .card img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.download .carousel .card:hover img {
+    border-color: #fff;
+    transform: translateY(-5px);
+    filter: grayscale(90%);
 }
