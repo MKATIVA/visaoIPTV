@@ -563,12 +563,12 @@
     background: var(--cinza);
     padding: 30px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .footer a {
     color: #FF2E63;
     font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
     font-weight: 500;
     transition: 0.5s;
 }
