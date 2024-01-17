@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,800;1,500&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Russo+One&family=Satisfy&family=Share+Tech+Mono&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
 .card-item,
 .header {
     -webkit-transition: all .4s
@@ -127,7 +131,12 @@
     text-align: justify;
 }
 
-@media screen and (max-width: 768px) {
+.p-intro span {
+    color: #FF2E63;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
     .intro-content {
         padding: 120px 20px 100px;
         display: -webkit-box;
@@ -154,6 +163,37 @@
     .download .carousel {
         display: grid;
         grid-template-columns: repeat(2, minmax(240px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 769px) {
+    .intro-content {
+        padding: 120px 20px 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .atributos {
+        font-size: 18px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .download .carousel {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(240px, 1fr));
         gap: 20px;
     }
 }
@@ -521,8 +561,21 @@
 
 .footer {
     background: var(--cinza);
-    padding: 30px
+    padding: 30px;
+    text-align: center;
 }
+
+.footer a {
+    color: #FF2E63;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.footer a:hover {
+    color: #08D9D6;
+}
+
 
 .btn-mobile {
     width: 50px;
@@ -864,17 +917,22 @@ body {
         text-align: center;
     }
 
-    .logo img {
-        width: 50%;
-        height: auto;
-    }
-
     .download .carousel {
         display: grid;
         grid-template-columns: repeat(1, minmax(240px, 1fr));
         gap: 20px;
     }
 
+    .download .carousel .card img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.3s ease;
+    }
+
+    .footer span {
+        display: block;
+    }
 }
 
 /* Section de Download */
@@ -886,7 +944,6 @@ body {
     text-align: center;
     padding: 30px;
 }
-
 
 .carousel {
     display: grid;
@@ -917,6 +974,13 @@ body {
 .download .carousel .card .btn {
     margin: 10px 0;
     width: 100%;
+}
+
+.download .carousel .card p {
+    color: #fff;
+    padding: 5px 0;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
 }
 
 .download .carousel .card img {
