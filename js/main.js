@@ -120,4 +120,36 @@ backToTopButton.addEventListener("click", function () {
 
  });
 
+/// mostrar a SECTION DOWNLOAD
  
+document.addEventListener("DOMContentLoaded", function () {
+  // Inicialmente, esconde todos os carrosséis, exceto o primeiro
+  var carousels = document.querySelectorAll(".carousel");
+  for (var i = 1; i < carousels.length; i++) {
+    carousels[i].style.display = "none";
+  }
+
+  // Adiciona um ouvinte de evento ao botão Celular-TV
+  document
+    .getElementById("btnCelularTV")
+    .addEventListener("click", function () {
+      // Esconde todos os carrosséis
+      for (var i = 0; i < carousels.length; i++) {
+        carousels[i].style.display = "none";
+      }
+      // Mostra o carrossel correspondente
+      document.getElementById("Celular-TV").style.display = "grid"; // Usamos 'grid' para manter a formatação original
+    });
+
+  // Adiciona um ouvinte de evento ao botão Computadores
+  document
+    .getElementById("btnComputadores")
+    .addEventListener("click", function () {
+      // Esconde todos os carrosséis
+      for (var i = 0; i < carousels.length; i++) {
+        carousels[i].style.display = "none";
+      }
+      // Mostra o carrossel correspondente
+      document.getElementById("Computadores").style.display = "grid"; // Usamos 'grid' para manter a formatação original
+    });
+});

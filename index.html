@@ -62,7 +62,8 @@
         <h1 class="titulo-principal">O melhor do <span>IPTV</span> para <span>você</span> e sua <span>família</span>
         </h1>
         <b class="atributos">Qualidade <span>•</span> Confiança <span>•</span> Preço justo</b>
-        <p class="paragrafo p-intro">A <span>VISÃO IPTV</span> oferece uma ampla variedade de canais, filmes e séries para uma
+        <p class="paragrafo p-intro">A <span>VISÃO IPTV</span> oferece uma ampla variedade de canais, filmes e séries
+          para uma
           experiência única. A plataforma inclui tanto canais fechados quanto diversas opções em canais abertos,
           proporcionando uma jornada completa de entretenimento.</p>
         <div class="btns">
@@ -212,9 +213,20 @@
         <h1 class="titulo">Download</h1>
         <p class="paragrafo p-contato">Baixe a diversão! Nossos aplicativos estão aqui para tornar o seu entretenimento
           ainda melhor. 📲✨</p>
-      </div>
+        <div class="botoes">
 
-      <div class="carousel">
+          <button class="btn-down" id="btnCelularTV">
+            <span class="icone"><i class="bi bi-phone"></i></span> Celular
+            <span class="icone"><i class="bi bi-tv"></i></span> TV
+          </button>
+
+          <button class="btn-down" id="btnComputadores">
+            <span class="icone"><i class="bi bi-laptop"></i> </span> Computadores
+          </button>
+        </div>
+      </div>
+      
+      <div class="carousel" id="Celular-TV" style="display: none;">
 
         <!-- Card 1 - XCIPTV -->
         <div class="card">
@@ -224,7 +236,7 @@
             </div>
             <p>XCIPTV</p>
           </a>
-          <a href="download/xciptv-player.apk" download id="downloadLink" class="btn">
+          <a href="download/xciptv-player.apk" download id="downloadLink" class="btn-down">
             <span class="icone"><i class="bi bi-android2"></i></span>
             <span class="icone"><i class="bi bi-tv"></i></span>
             <span class="texto">Baixar App</span>
@@ -239,7 +251,7 @@
             </div>
             <p>POWER SMART</p>
           </a>
-          <a href="download/POWER SMART.apk" download id="downloadLink" class="btn">
+          <a href="download/POWER SMART.apk" download id="downloadLink" class="btn-down">
             <span class="icone"><i class="bi bi-android2"></i></span>
             <span class="icone"><i class="bi bi-tv"></i></span>
             <span class="texto">Baixar App</span>
@@ -254,7 +266,7 @@
             </div>
             <p>GRANFLIX IPTV FG</p>
           </a>
-          <a href="download/GRANFLIX IPTV FG.apk" download id="downloadLink" class="btn">
+          <a href="download/GRANFLIX IPTV FG.apk" download id="downloadLink" class="btn-down">
             <span class="icone"><i class="bi bi-android2"></i></span>
             <span class="icone"><i class="bi bi-tv"></i></span>
             <span class="texto">Baixar App</span>
@@ -269,7 +281,7 @@
             </div>
             <p>iptv smarters</p>
           </a>
-          <a href="download/iptv_smarters_tv_box_2.2.2.4.apk" download id="downloadLink" class="btn">
+          <a href="download/iptv_smarters_tv_box_2.2.2.4.apk" download id="downloadLink" class="btn-down">
             <span class="icone"><i class="bi bi-android2"></i></span>
             <span class="icone"><i class="bi bi-tv"></i></span>
             <span class="texto">Baixar App</span>
@@ -284,7 +296,7 @@
             </div>
             <p>Smart IPTV Xtream Player</p>
           </a>
-          <a href="download/Smart IPTV Xtream Player.apk" download id="downloadLink" class="btn">
+          <a href="download/Smart IPTV Xtream Player.apk" download id="downloadLink" class="btn-down">
             <span class="icone"><i class="bi bi-android2"></i></span>
             <span class="icone"><i class="bi bi-tv"></i></span>
             <span class="texto">Baixar App</span>
@@ -299,12 +311,86 @@
             </div>
             <p>IPTV Blink Player</p>
           </a>
-          <a href="download/IPTV Blink Player 2.4.2.apk" download id="downloadLink" class="btn">
+          <a href="download/IPTV Blink Player 2.4.2.apk" download id="downloadLink" class="btn-down">
             <span class="icone"><i class="bi bi-android2"></i></span>
             <span class="icone"><i class="bi bi-tv"></i></span>
             <span class="texto">Baixar App</span>
           </a>
         </div><!-- CARD -->
+      </div><!-- carousel -->
+
+      <div class="carousel" id="Computadores" style="display: none;">
+
+        <!-- https://webcb.top/granflix/index.php -->
+        <div class="card">
+          <a href="https://webcb.top/granflix/index.php" target="_blank">
+            <div class="box">
+              <img src="download/07 - PC.png" alt="">
+            </div>
+            <p>granflix</p>
+          </a>
+          <a href="https://webcb.top/granflix/index.php" class="btn-down" target="_blank">
+            <span class="icone"><i class="bi bi-laptop"></i></span>
+            <span class="texto">Acessar</span>
+          </a>
+        </div><!-- CARD -->
+
+        <!-- http://webtv.iptvsmarters.com/index.php?adduser -->
+        <div class="card">
+          <a href="http://webtv.iptvsmarters.com/index.php?adduser" target="_blank">
+            <div class="box">
+              <img src="download/08 - PC.png" alt="">
+            </div>
+            <p>webtv iptvsmarters</p>
+          </a>
+          <a href="http://webtv.iptvsmarters.com/index.php?adduser" target="_blank" class="btn-down">
+            <span class="icone"><i class="bi bi-laptop"></i></span>
+            <span class="texto">Acessar</span>
+          </a>
+        </div><!-- CARD -->
+
+        <!-- http://webtv-new.iptvsmarters.com/profiles -->
+        <div class="card">
+          <a href="http://webtv-new.iptvsmarters.com/profiles" target="_blank">
+            <div class="box">
+              <img src="download/09 - PC.png" alt="">
+            </div>
+            <p>webtv new iptvsmarters</p>
+          </a>
+          <a href="http://webtv-new.iptvsmarters.com/profiles" target="_blank" class="btn-down">
+            <span class="icone"><i class="bi bi-laptop"></i></span>
+            <span class="texto">Acessar</span>
+          </a>
+        </div><!-- CARD -->
+
+        <!-- https://webcb.top/tvplay -->
+        <div class="card">
+          <a href="https://webcb.top/tvplay" target="_blank">
+            <div class="box">
+              <img src="download/10 - PC - P2P.png" alt="">
+            </div>
+            <p>tvplay p2p</p>
+          </a>
+          <a href="https://webcb.top/tvplay" target="_blank" class="btn-down">
+            <span class="icone"><i class="bi bi-laptop"></i></span>
+            <span class="texto">Acessar</span>
+          </a>
+        </div><!-- CARD -->
+
+        <!-- https://powerboxoficial.brtv.me -->
+        <div class="card">
+          <a href="https://powerboxoficial.brtv.me" target="_blank">
+            <div class="box">
+              <img src="download/11 - PC.png" alt="">
+            </div>
+            <p>power box oficial</p>
+          </a>
+          <a href="https://powerboxoficial.brtv.me" target="_blank" class="btn-down">
+            <span class="icone"><i class="bi bi-laptop"></i></span>
+            <span class="texto">Acessar</span>
+          </a>
+        </div><!-- CARD -->
+
       </div><!-- carousel -->
 
     </section>
@@ -320,6 +406,7 @@
   <!-- Adicione o jQuery e o Slick Carousel CDN -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
 </body>
 
 </html>
